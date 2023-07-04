@@ -22,13 +22,13 @@ try {
     $mail->isSMTP();
     $mail->Host = 'smtp.googlemail.com';  //gmail SMTP server
     $mail->SMTPAuth = true;
-    $mail->Username = 'umairboi20@gmail.com';   //username
-    $mail->Password = 'Pakistan1@345';   //password
+    $mail->Username = 'test@gmail.com';   //username
+    $mail->Password = 'test1234';   //password
     $mail->SMTPSecure = 'ssl';
     $mail->Port = 465;                    //smtp port
   
-    $mail->setFrom('umairboi20@gmail.com', $_POST['cname']);
-    $mail->addAddress('umairboi20@gmail.com', 'BURGER HOUSE');
+    $mail->setFrom('test@gmail.com', $_POST['cname']);
+    $mail->addAddress('test@gmail.com', 'BURGER HOUSE');
 
     //php
     $connect=new mysqli("localhost","root","","wad"); 
